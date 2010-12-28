@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift << File.join(File.dirname(__FILE__), "..", "lib")
+
+require 'mousetrap'
+require 'irb'
+require 'yaml'
+
+config_file = File.join(File.dirname(__FILE__), "..", "mousetrap_config.yml")
+raise "#{config_file} must exist" unless File.exists?(config_file)
+config = YAML.load_file(config_file)
+Mousetrap.product_code = config['product_code']
+Mousetrap.authenticate(config['username'], config['password'])
+
+IRB.start
