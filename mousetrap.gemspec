@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
-     ".gitignore",
      "MIT-LICENSE",
      "README.textile",
      "Rakefile",
