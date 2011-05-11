@@ -2,7 +2,7 @@ module Mousetrap
   class Resource
     include HTTParty
     headers 'User-Agent' => 'Mousetrap Ruby Client'
-    base_uri 'https://cheddargetter.com'
+    base_uri 'https://guyer.cheddargetter.com'
 
     def initialize(hash={})
       hash.each do |key, value|

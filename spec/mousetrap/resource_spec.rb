@@ -34,7 +34,7 @@ describe Mousetrap::Resource do
 
   describe "class" do
     it "sets the base URI" do
-      subject.default_options[:base_uri].should == 'https://cheddargetter.com'
+      subject.default_options[:base_uri].should == 'https://guyer.cheddargetter.com'
     end
 
     it "set the header to our client name" do
